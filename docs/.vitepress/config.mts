@@ -13,6 +13,8 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Algorithm', link: '/Algorithm/Analysis' },
+      { text: 'Software-Analysis', link: '/Software-Analysis/Introduction' },
+      { text: 'Fuzzing', link: '/Fuzzing/Fuzzing-Basic' },
     ],
 
     sidebar: {
@@ -20,6 +22,20 @@ export default defineConfig({
         text: 'Algorithm',
         items: [
           {text: 'Analysis', link: '/Algorithm/Analysis.md'},
+        ]
+      },
+      '/Software-Analysis/': {
+        text: 'Software-Analysis',
+        items: [
+          {text: 'Introduction', link: '/Software-Analysis/Introduction.md'},
+          {text: 'Data-Flow', link: '/Software-Analysis/Data-Flow.md'},
+          {text: 'SSA', link: '/Software-Analysis/SSA.md'},
+        ]
+      },
+      '/Fuzzing/': {
+        text: 'Fuzzing',
+        items: [
+          {text: 'Fuzzing-Basic', link: '/Fuzzing/Fuzzing-Basic.md'},
         ]
       },
     },
